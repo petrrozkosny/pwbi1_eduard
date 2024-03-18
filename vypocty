@@ -1,0 +1,9 @@
+11 pocet datumu se srazkami ruzyne = 
+
+-- danem mesici, roce, lokalita ruzyne, srazky >0, pocet datumu
+
+COUNTX(
+    FILTER(data,
+    data[lokalita] = "RUZYNE"
+    && data[srazky] > 0),
+data[datum])
